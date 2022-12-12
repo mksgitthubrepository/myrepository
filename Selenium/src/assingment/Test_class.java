@@ -23,8 +23,6 @@ public class Test_class {
 
 		driver.findElement(By.name("Private")).click();
 		
-		
-
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='product-grid']//div[@id='product-box'])[2]")).click();
 		
