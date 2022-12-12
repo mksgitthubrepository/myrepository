@@ -1,0 +1,12 @@
+package oops;
+
+public class Grandfather {
+	
+	public void test() 
+	{
+		System.out.println("farm");
+	}
+	public static void main(String[] args) {
+		System.out.println("farm");
+	}
+}		

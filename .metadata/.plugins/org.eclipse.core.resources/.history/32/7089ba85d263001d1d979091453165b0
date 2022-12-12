@@ -1,0 +1,38 @@
+package myPackage;
+
+import java.util.Arrays;
+
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class Chromeoptions 
+{
+    public static void main(String[] args) 
+    
+    {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MUKUL\\Desktop\\AUTO\\selenium\\chromedriver.exe");
+		
+	    ChromeOptions options= new ChromeOptions();
+	   //options.addArguments("incognito");
+	    options.addArguments("--disable-notifications");
+	   //options.addArguments("start-maximized");
+	    options.addArguments("--disable-infobars");
+	    //options.addArguments("headless");
+	    
+	   options.setExperimentalOption("excludeSwitches",new String[]{"enable-automation"});//-->to disable infobars  
+		WebDriver driver= new ChromeDriver(options);
+		
+		
+		driver.get("https://expired.badssl.com/");
+		driver.getCurrentUrl();
+		
+	/*	driver.get("https://www.justdial.com/");
+		
+		String url = driver.getCurrentUrl();
+		System.out.println(url);*/
+		
+	
+	}
+}

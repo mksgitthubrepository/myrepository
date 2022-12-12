@@ -1,0 +1,9 @@
+package oops;
+
+public class Father extends Grandfather
+{
+	public void test1()
+	{
+		System.out.println("home");
+	} 
+}

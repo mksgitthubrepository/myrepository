@@ -1,0 +1,46 @@
+package myPackage;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.Select;
+
+public class Practice1 
+{
+    public static void main(String[] args) throws InterruptedException, IOException 
+    
+    {
+    System.setProperty("webdriver.chrome.driver","C:\\Users\\MUKUL\\Desktop\\AUTO\\selenium\\chromedriver.exe");
+    
+    
+	WebDriver driver=new ChromeDriver();
+	driver.manage().window().maximize();
+   driver.get("https://vctcpune.com/");
+   
+   driver.findElement(By.linkText("Start Selenium Practice")).click();
+   
+     Set<String> id = driver.getWindowHandles();
+  
+      Iterator<String> ids = id.iterator();
+      {
+    	  
+    	  String mpi = ids.next();
+    	  String npi = ids.next();
+    	  
+    	  driver.switchTo().window(npi);
+      }
+     
+     driver.findElement(By.linkText("About Us")).click();
+      
+	}
+}

@@ -1,0 +1,45 @@
+package myPackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class ActionsClass
+{
+
+	
+	public static void main(String[] args) throws InterruptedException 
+    {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MUKUL\\Desktop\\AUTO\\selenium\\chromedriver.exe");
+		 
+		WebDriver driver= new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://demo.guru99.com/test/drag_drop.html");
+		
+		Actions a=new Actions(driver);
+		
+		 WebElement Ele = driver.findElement(By.linkText("SALES"));
+		
+		 Thread.sleep(2000);
+		 a.moveToElement(Ele).perform();
+		 
+		WebElement sel = driver.findElement(By.xpath("(//a[@class='dropdown-toggle'])[1]"));
+		 Thread.sleep(2000);
+		a.moveToElement(sel).click().build().perform();
+		 
+		 WebElement src = driver.findElement(By.linkText("5000"));
+		 WebElement tar = driver.findElement(By.id("amt8"));
+		 
+		 
+		 a.dragAndDrop(src, tar).perform();
+		 
+    }
+	
+	
+	
+}

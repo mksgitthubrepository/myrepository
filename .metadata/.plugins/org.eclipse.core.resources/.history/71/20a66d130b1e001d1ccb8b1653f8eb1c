@@ -1,0 +1,9 @@
+package oops;
+
+public class grandfather {
+	
+	public static void mother() 
+	{
+		System.out.println("properties of mother");
+	}
+}		

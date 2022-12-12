@@ -1,0 +1,11 @@
+package oops;
+
+public class Grandfather {
+	
+	public void farm() 
+	{
+		System.out.println("farm");
+	}
+	
+	
+}		

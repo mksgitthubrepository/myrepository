@@ -1,0 +1,20 @@
+package method_use;
+
+public class MockInfo {
+public static void main(String[] args) {
+	MockInfo a1= new MockInfo();
+	a1.memberinfo();
+}
+String name="mukul";
+String department ="electrical";
+int passoutyear=2020;
+
+public void memberinfo()
+{
+	System.out.println("member name "+name);
+	System.out.println("department  "+department);
+	System.out.println("passout_year "+passoutyear);
+	}
+
+
+}

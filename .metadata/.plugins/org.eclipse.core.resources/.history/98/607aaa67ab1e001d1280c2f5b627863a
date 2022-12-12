@@ -1,0 +1,27 @@
+package oops;
+
+public class Boy extends Father{
+
+
+public void flat(){
+	System.out.println("flat");
+}
+
+
+public static void main(String[] args) {
+	
+	
+	
+    Boy a1=new Boy();
+	a1.flat();
+	a1.home();
+	a1.farm();
+	
+	
+	
+	
+	
+}
+	
+	
+}

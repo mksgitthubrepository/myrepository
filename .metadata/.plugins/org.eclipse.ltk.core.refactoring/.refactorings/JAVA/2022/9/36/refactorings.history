@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;interface1.IF_call&apos; to &apos;Implements&apos;&#x0D;&#x0A;- Original project: &apos;16th_July_A_Evening&apos;&#x0D;&#x0A;- Original element: &apos;interface1.IF_call&apos;&#x0D;&#x0A;- Renamed element: &apos;interface1.Implements&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;IF_call&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;interface1{IF_call.java[IF_call" matchStrategy="1" name="Implements" qualified="false" references="true" similarDeclarations="false" stamp="1662011757348" textual="false" version="1.0"/>
+</session>

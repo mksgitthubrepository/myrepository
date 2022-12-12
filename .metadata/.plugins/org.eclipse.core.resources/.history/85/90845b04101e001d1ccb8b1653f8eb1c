@@ -1,0 +1,14 @@
+package oops;
+
+public class Father extends Grandfather
+{
+	public void test1()
+	{
+		System.out.println("home");
+	}
+	public static void main(String[] args) {
+		Father a1=new Father();
+		a1.test1();
+		a1.test();
+	}
+}

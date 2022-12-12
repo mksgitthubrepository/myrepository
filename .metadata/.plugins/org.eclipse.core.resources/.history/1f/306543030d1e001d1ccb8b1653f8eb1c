@@ -1,0 +1,9 @@
+package oops;
+
+public class Grandfather {
+	
+	publics void test() 
+	{
+		System.out.println("farm");
+	}
+}		

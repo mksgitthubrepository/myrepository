@@ -1,0 +1,39 @@
+package myPackage;
+
+import java.awt.Scrollbar;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Practice1 
+{
+    public static void main(String[] args) throws InterruptedException 
+    
+    {
+    	System.setProperty("webdriver.chrome.driver", "C:\\Users\\MUKUL\\Desktop\\AUTO\\selenium\\chromedriver.exe");
+		 
+		WebDriver driver= new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://vctcpune.com/selenium/practice.html");
+		
+
+		List<WebElement> tab = driver.findElements(By.id("product"));
+		
+		Iterator<WebElement> t = tab.iterator();
+		
+		while(t.hasNext()) 
+		{
+			System.out.println(t.next().getText());
+		}
+		
+	}
+}

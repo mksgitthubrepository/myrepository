@@ -1,0 +1,52 @@
+package myPackage;
+
+import java.awt.RenderingHints.Key;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class ActionsClass
+{
+
+	
+
+	public static void main(String[] args) throws InterruptedException 
+    {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MUKUL\\Desktop\\AUTO\\selenium\\chromedriver.exe");
+		 
+		WebDriver driver= new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://skpatro.github.io/demo/links/");
+		
+	    driver.findElement(By.name("NewWindow")).click();
+		
+	         Set<String> iap = driver.getWindowHandles();
+	  
+		
+	        Iterator<String> cpi = iap.iterator();
+	         
+		      System.out.println(cpi.next());
+		      System.out.println(cpi.next());
+		      
+		     Thread.sleep(2000);
+		     WebDriver cp =driver.switchTo().window("CDwindow-864756907E2A8D81D969C359509CC7EB");
+	
+	        cp.manage().window().maximize();
+	   
+	   
+    }
+	
+	
+	
+}

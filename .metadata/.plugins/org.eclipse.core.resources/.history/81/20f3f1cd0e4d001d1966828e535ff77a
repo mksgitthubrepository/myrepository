@@ -1,0 +1,52 @@
+package myPackage;
+
+import java.awt.RenderingHints.Key;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class ActionsClass
+{
+
+	
+	public static void main(String[] args) throws InterruptedException 
+    {
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MUKUL\\Desktop\\AUTO\\selenium\\chromedriver.exe");
+		 
+		WebDriver driver= new ChromeDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.get("https://facebook.com");
+		
+		Actions a=new Actions(driver);
+		
+	   driver.findElement(By.xpath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
+	   Thread.sleep(1000);
+	   WebElement uf = driver.findElement(By.xpath("(//input[@type='text'])[2]"));
+	
+	
+	   a.moveToElement(uf).click().keyDown(Keys.SHIFT).sendKeys("mukul").build().perform();
+		 
+	     WebElement day = driver.findElement(By.id("day"));
+	
+	 
+	   
+	   for(int i=1;i<=5;i--) 
+	   {
+		   a.moveToElement(day).click().keyDown(Keys.ARROW_UP).build().perform();
+	   }
+	
+	   
+	   
+    }
+	
+	
+	
+}

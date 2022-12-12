@@ -1,0 +1,21 @@
+package oops;
+
+public class Boy extends Grandfather
+{
+public static void main(String[] args) {
+	
+	System.out.println("flat");
+	
+	
+	
+	System.out.println("boy property");
+	Boy a1=new Boy();
+	a1.mother();
+	
+	
+	
+	
+}
+	
+	
+}

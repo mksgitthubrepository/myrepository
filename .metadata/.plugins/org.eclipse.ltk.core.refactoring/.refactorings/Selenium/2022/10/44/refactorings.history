@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;myPackage.Excel_table_handle&apos; to &apos;Excel_sheet_reading&apos;&#x0D;&#x0A;- Original project: &apos;16th_July_A_Evening_Selenium&apos;&#x0D;&#x0A;- Original element: &apos;myPackage.Excel_table_handle&apos;&#x0D;&#x0A;- Renamed element: &apos;myPackage.Excel_sheet_reading&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Excel_table_handle&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;myPackage{Excel_table_handle.java[Excel_table_handle" matchStrategy="1" name="Excel_sheet_reading" qualified="false" references="true" similarDeclarations="false" stamp="1666498406220" textual="false" version="1.0"/>
+</session>

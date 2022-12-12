@@ -1,0 +1,27 @@
+package method_use;
+public class MockInfo{
+	public static void main(String[] args) {
+		MockInfo A1=new MockInfo();
+		A1.studentinfo("mukul kapadnis", "Electrical", 2020, true);
+		A1.studentinfo("arati datir", "nil ", 0, true);
+		A1.studentinfo("dipika nikam", "nil", 0, true);
+		A1.studentinfo("shilpa dhanwate", "nil", 0, true);
+		A1.studentinfo("uma maheshwari r", "nil", 0, true);
+	}
+	String name="name";
+	String branch="bramch";
+	int year=0000;
+	boolean present=true;
+	 public void studentinfo(String name,String branch,int year,boolean present) {
+		 System.out.println("student name "+name);
+		 System.out.println("Branch "+branch);
+		 System.out.println("year of passing "+year);
+		 System.out.println("attendence "+present);
+		 System.out.println("===========================");
+	 }
+}
+
+	
+	
+
+	

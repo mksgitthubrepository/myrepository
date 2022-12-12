@@ -1,0 +1,18 @@
+package oops;
+
+public class Boy extends Father
+{
+public static void main(String[] args) {
+	
+	System.out.println("flat");
+	
+	Boy a1=new Boy();
+	
+	
+	
+	
+	
+}
+	
+	
+}
