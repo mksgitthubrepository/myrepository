@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-16T13:49:57 IST" name="Default suite" finished-at="2022-12-16T13:50:25 IST" duration-ms="28567">
+    <groups>
+    </groups>
+    <test started-at="2022-12-16T13:49:57 IST" name="Default test" finished-at="2022-12-16T13:50:25 IST" duration-ms="28567">
+      <class name="neoStoxTest.NeoStoxTestClass">
+        <test-method is-config="true" signature="launchbrowser1()[pri:0, instance:neoStoxTest.NeoStoxTestClass@d9345cd]" started-at="2022-12-16T13:49:57 IST" name="launchbrowser1" finished-at="2022-12-16T13:50:06 IST" duration-ms="9385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser1 -->
+        <test-method is-config="true" signature="beforemethods()[pri:0, instance:neoStoxTest.NeoStoxTestClass@d9345cd]" started-at="2022-12-16T13:50:06 IST" name="beforemethods" finished-at="2022-12-16T13:50:23 IST" duration-ms="16675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethods -->
+        <test-method signature="validation()[pri:0, instance:neoStoxTest.NeoStoxTestClass@d9345cd]" started-at="2022-12-16T13:50:23 IST" name="validation" finished-at="2022-12-16T13:50:25 IST" duration-ms="2040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validation -->
+        <test-method is-config="true" signature="logout(org.testng.ITestResult)[pri:0, instance:neoStoxTest.NeoStoxTestClass@d9345cd]" started-at="2022-12-16T13:50:25 IST" name="logout" finished-at="2022-12-16T13:50:25 IST" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validation status=SUCCESS method=NeoStoxTestClass.validation()[pri:0, instance:neoStoxTest.NeoStoxTestClass@d9345cd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:neoStoxTest.NeoStoxTestClass@d9345cd]" started-at="2022-12-16T13:50:25 IST" name="closebrowser" finished-at="2022-12-16T13:50:25 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- neoStoxTest.NeoStoxTestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
