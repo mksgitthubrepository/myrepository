@@ -30,5 +30,7 @@ public class Test_class {
 		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//a[@class='tool-link']//i[@class='icon-cart']")).click();
+		
+		
 	}
 }
