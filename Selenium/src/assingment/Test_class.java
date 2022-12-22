@@ -31,6 +31,5 @@ public class Test_class {
 		
 		driver.findElement(By.xpath("//a[@class='tool-link']//i[@class='icon-cart']")).click();
 		
-		
 	}
 }
