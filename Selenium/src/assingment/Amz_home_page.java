@@ -33,6 +33,9 @@ public class Amz_home_page
 	         System.out.println("unauthorised user");
 		}		
 		Com_use_methods.screenshort(driver);
+		
+		
+		
 	}
 	
 	
