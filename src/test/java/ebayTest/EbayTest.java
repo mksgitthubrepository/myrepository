@@ -25,6 +25,7 @@ import ebaybase.EbayBase;
 public class EbayTest extends EbayBase
 
 {
+
 	EbayPage ebay;
 	EbayUsername uname;
 	EbayPassword pwd;
